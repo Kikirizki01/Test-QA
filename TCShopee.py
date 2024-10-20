@@ -6,13 +6,12 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Set path ke ChromeDriver dan Chrome
 s = Service("C:\\Program Files (x86)\\chromedriver.exe")
 chrome_options = Options()
 chrome_options.binary_location = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
 chrome_options.add_argument("--disable-notifications")  # Disable notifications
 
-# Inisialisasi WebDriver dengan opsi yang benar
+# Inisialisasi WebDriver
 browser = webdriver.Chrome(service=s, options=chrome_options)
 
 # Buka halaman Shopee
